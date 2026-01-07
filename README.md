@@ -1,9 +1,8 @@
 # 👋 Hi, I’m Bowen Li
 
 📍 Copenhagen, Denmark  
-🎓 MSc in Software Design @ IT University of Copenhagen (Graduating Feb 2026)
 
-I enjoy **building things** , Here are some side projects I’ve built so far.
+I enjoy building things end to end — turning ideas into working systems. Here are some side projects I’ve built so far.
 
 ---
 
