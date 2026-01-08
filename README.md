@@ -1,4 +1,4 @@
-# 👋 Hi, I’m Bowen Li
+# 👋 Hi, I’m Bowen
 
 📍 Copenhagen, Denmark  
 🎓 MSc in Software Design @ IT University of Copenhagen (Graduating Feb 2026)
