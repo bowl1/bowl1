@@ -2,7 +2,9 @@
 
 📍 Copenhagen, Denmark  
 
-I enjoy building things end to end — turning ideas into working systems. Here are some side projects I’ve built so far.
+I enjoy building things end to end — turning real-world problems into working, user-friendly systems.
+
+Here are some side projects I’ve built so far.
 
 ---
 
@@ -10,7 +12,9 @@ I enjoy building things end to end — turning ideas into working systems. Here 
 
 ### 🌀 Behaviour-Aware Federated Wind Power Forecasting  
 **Master’s Thesis Project**  
-🔗 https://github.com/bowl1/Wind-and-AI  
+🔗 Strategy design and model training (Python, FL, LSTM): https://github.com/bowl1/Wind-and-AI
+
+🔗 End-to-end demo application (ML→API→UI): https://github.com/bowl1/Behaviour-Aware-Federated-Wind-Power-Forecasting-System-demo
 
 - Built a **distributed wind power forecasting system** across **400+ independent wind turbines**.
 - Designed a **behaviour-aware auto-split clustering strategy** to hierarchically group
@@ -18,7 +22,7 @@ I enjoy building things end to end — turning ideas into working systems. Here 
 - Trained **cluster-specific federated LSTM models** and evaluated them against
   centralized and geographic baselines under real-world data heterogeneity.
 
-**Tech:** Python, PyTorch, Federated Learning, LSTM, Time-Series Forecasting
+**Tech:** Python, PyTorch, Federated Learning, LSTM, Time-Series Forecasting, C#, FastApi
 
 ---
 
