@@ -2,8 +2,6 @@
 
 📍 Copenhagen, Denmark  
 
-I enjoy building things end to end — turning real-world problems into working, user-friendly systems.
-
 Here are some side projects I’ve built so far.
 
 ---
