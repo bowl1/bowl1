@@ -12,7 +12,7 @@ Here are some side projects I’ve built so far.
 **Master’s Thesis Project**  
 🔗 Strategy design and model training (Python, FL, LSTM): https://github.com/bowl1/Wind-and-AI
 
-🔗 End-to-end demo application (ML→API→UI): https://github.com/bowl1/Behaviour-Aware-Federated-Wind-Power-Forecasting-System-demo
+🔗 Interface application: https://github.com/bowl1/Behaviour-Aware-Federated-Wind-Power-Forecasting-System-demo
 
 - Built a **distributed wind power forecasting system** across **400+ independent wind turbines**.
 - Designed a **behaviour-aware auto-split clustering strategy** to hierarchically group
@@ -20,7 +20,7 @@ Here are some side projects I’ve built so far.
 - Trained **cluster-specific federated LSTM models** and evaluated them against
   centralized and geographic baselines under real-world data heterogeneity.
 
-**Tech:** Python, PyTorch, Federated Learning, LSTM, Time-Series Forecasting, C#, FastApi
+**Tech:** Python, PyTorch, Machine Learning, Federated Learning, LSTM, Time-Series Forecasting, FastApi, React, deep learning, ETL pipelines, TypeScript
 
 ---
 
@@ -33,7 +33,7 @@ Here are some side projects I’ve built so far.
 - Always provides **page-level citations** and refuses to hallucinate.
 - Deployed backend and frontend separately with automated CI/CD pipelines.
 
-**Tech:** Python, FastAPI, React, Next.js, RAG, Docker, GitHub Actions
+**Tech:** Python, FastAPI, React, Next.js, RAG, Docker, GitHub Actions, LLMs, Vercel, AWS, HuggingFace, LangChain, TypeScript
 
 ---
 
@@ -46,7 +46,7 @@ Here are some side projects I’ve built so far.
 - Built a RESTful API, tracked experiments with MLflow, and deployed the system
   on a cloud VM using Docker and CI/CD.
 
-**Tech:** Python, FastAPI, scikit-learn, MLflow, Docker, AWS
+**Tech:** Python, FastAPI, scikit-learn, MLflow, Docker, AWS, MLflow
 
 ---
 
@@ -58,7 +58,7 @@ Here are some side projects I’ve built so far.
 - Supports text and media posts with **per-group aliases**, preserving user privacy.
 - Implemented authentication, media uploads, and scalable feed interactions.
 
-**Tech:** React, TypeScript, Next.js, PostgreSQL, Prisma, Firebase Auth
+**Tech:** React, TypeScript, Next.js, PostgreSQL, Prisma, Firebase Auth, Vercel
 
 ---
 
@@ -69,7 +69,7 @@ Here are some side projects I’ve built so far.
   ingredients available at home.
 - Designed for simplicity, everyday use, and reducing food waste.
 
-**Tech:** Flutter, Mobile App Development
+**Tech:** Flutter, Mobile App Development, Mongodb, Node.js, Express,js, firebase auth
 
 ---
 
@@ -79,7 +79,7 @@ Here are some side projects I’ve built so far.
 - Implemented a **mini search engine** using forward and inverted indexing.
 - Indexed **25,000+ Wikipedia articles** and benchmarked query performance.
 
-**Tech:** Java, SQLite, Indexing, JUnit, JMH
+**Tech:** Java, SQLite, Indexing, JUnit testing, JMH benchmark, forward index, inverted index
 
 ---
 
