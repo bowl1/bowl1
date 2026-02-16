@@ -8,23 +8,7 @@ Here are some side projects I’ve built so far.
 
 ## 🧩 Projects
 
-### 🌀 Behaviour-Aware Federated Wind Power Forecasting  
-**Master’s Thesis Project**  
-🔗 Strategy design and model training (Python, FL, LSTM): https://github.com/bowl1/Wind-and-AI
-
-🔗 Interface application: https://github.com/bowl1/Behaviour-Aware-Federated-Wind-Power-Forecasting-System-demo
-
-- Built a **distributed wind power forecasting system** across **400+ independent wind turbines**.
-- Designed a **behaviour-aware auto-split clustering strategy** to hierarchically group
-  heterogeneous clients using only **locally aggregated statistics**.
-- Trained **cluster-specific federated LSTM models** and evaluated them against
-  centralized and geographic baselines under real-world data heterogeneity.
-
-**Tech:** Python, PyTorch, Machine Learning, Federated Learning, LSTM, Time-Series Forecasting, FastApi, React, deep learning, ETL pipelines, TypeScript
-
----
-
-### 🤖 Ask My Docs — PDF-based RAG Assistant  
+### 🤖 Ask My Docs — PDF-based RAG Chatbot  
 🔗 https://github.com/bowl1/AskMyDocs-AI-app  
 🌐 https://askmydocument.vercel.app  
 
@@ -51,25 +35,49 @@ Here are some side projects I’ve built so far.
 ---
 
 ### 👻 My Little Ghost — Anonymous Social Platform  
-🔗 https://github.com/bowl1/social-chat-app  
-🌐 https://social-chat-dk.vercel.app  
+ 
+- React **anonymous social sharing platform** , developing from user interview -> product requirement-> logo design -> UI design-> usability testing -> code implementing. The UI design and code is as following,
+- Figma link for user case interview, UI design and mini component library: https://github.com/bowl1/Figma-Portfolio
+- 🔗 Github link for web application: https://github.com/bowl1/social-chat-app
+- 🌐 Deployment: https://social-chat-dk.vercel.app 
 
-- Built an **anonymous social sharing platform** focused on mental health.
 - Supports text and media posts with **per-group aliases**, preserving user privacy.
 - Implemented authentication, media uploads, and scalable feed interactions.
 
-**Tech:** React, TypeScript, Next.js, PostgreSQL, Prisma, Firebase Auth, Vercel
+**Tech:** React, TypeScript, Next.js, PostgreSQL, Prisma, Firebase Auth, Vercel, Figma, HTML,CSS
 
 ---
 
 ### 🥗 FridgeToFood — Recipe Discovery App  
-🔗 https://github.com/bowl1/FridgeToFood-mobile-app  
+🔗 https://github.com/bowl1/Food-Mobile-App
 
-- Built a **cross-platform mobile app** that generates recipe ideas based on
-  ingredients available at home.
-- Designed for simplicity, everyday use, and reducing food waste.
 
-**Tech:** Flutter, Mobile App Development, Mongodb, Node.js, Express,js, firebase auth
+A cross-platform recipe app that turns fridge ingredients into practical meal ideas to reduce food waste.  Built with **React Native (Expo + TypeScript)** and a **Node.js/Express** backend with **Firebase Auth + Firestore**.
+
+- Firebase Auth login/register
+- Recipe search via backend proxy to third-party API + dietary tag filtering (with strict vegetarian post-filter)
+- Favorites with offline-first **SQLite** cache + background sync
+- Profile with avatar upload (camera / photo library)
+- Recipe detail long-image sharing + local notifications on favorite save
+
+**Tech:** Expo (React Native), TypeScript, React Navigation, Zustand, TanStack Query, expo-sqlite, expo-notifications, Express, Firebase Admin, Firestore
+
+---
+
+### 🌀 Behaviour-Aware Federated Wind Power Forecasting  
+**Master’s Thesis Project**  
+🔗 Strategy design and model training (Python, FL, LSTM): https://github.com/bowl1/Wind-and-AI
+
+🔗 Interface application: https://github.com/bowl1/Behaviour-Aware-Federated-Wind-Power-Forecasting-System-demo
+
+- Built a **distributed wind power forecasting system** across **400+ independent wind turbines**.
+- Data preprocessing and feature engineering 
+- Designed a **behaviour-aware auto-split clustering strategy** to hierarchically group
+  heterogeneous clients and privacy friendly.
+- Trained **cluster-specific federated LSTM models** and evaluated metrics.
+- Build a React interface to for users interacting with models
+
+**Tech:** Python, PyTorch, Machine Learning, Federated Learning, LSTM, Time-Series Forecasting, FastApi, React, deep learning, ETL pipelines, TypeScript
 
 ---
 
