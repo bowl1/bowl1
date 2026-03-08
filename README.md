@@ -55,6 +55,10 @@ Figma: https://github.com/bowl1/Figma-Portfolio  (user case interview, UI design
 **Master’s Thesis Project**  
 🔗 Strategy design and model training (Python, FL, LSTM): https://github.com/bowl1/Wind-and-AI
 
+🔗 Published findings as a research paper: "A Behaviour-Aware Federated Forecasting Framework for Distributed Stand-Alone Wind Turbines" 
+  https://arxiv.org/abs/2603.05263
+
+
 🔗 Interface application: https://github.com/bowl1/Behaviour-Aware-Federated-Wind-Power-Forecasting-System-demo
 
 - Built a **distributed wind power forecasting system** across **400+ independent wind turbines**.
