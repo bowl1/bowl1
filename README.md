@@ -10,6 +10,22 @@ Email: bowenivy0@gmail.com
 ## 🧩 Projects
 
 
+### 📞 Escape — Fake Incoming Call App &nbsp;![Android](https://img.shields.io/badge/Published_on-Google_Play-3DDC84?logo=google-play&logoColor=white)
+🔗 https://github.com/bowl1/Escape_mobile_app  
+📲 **Google Play:** https://play.google.com/store/apps/details?id=com.libowen.fakecall
+
+A **published Android app** that generates convincing fake incoming calls to help users gracefully exit awkward situations. Tap once and your phone rings with a realistic ringtone, vibration, caller name — the works.
+
+- One-tap call generation with random callers using relationship labels (Mom, Boss, etc.)
+- Custom caller support — personalize name, number, and photo
+- Scheduling — delay calls from seconds up to 8 hours, works even when the phone is asleep
+- Lock-screen integration — calls appear as genuine incoming calls on the lock screen
+- Contact management — save favorite fake callers with default selection
+
+**Tech:** Kotlin, Jetpack Compose, Material Design 3, Hilt, Room, DataStore, AlarmManager, Foreground Service, Clean Architecture
+
+---
+
 ### 👻 My Little Ghost — Anonymous Social Platform  
 🔗 https://github.com/bowl1/social-chat-app  
 🌐 https://social-chat-dk.vercel.app  
