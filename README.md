@@ -2,7 +2,6 @@
 
 🧬 Carbon-based creature shipping bugs
 
-
 📍 Copenhagen, Denmark  
 
 📫 **Contact**  
@@ -12,24 +11,9 @@ Email: bowenivy0@gmail.com
 
 ## 🧩 Projects
 
+### Full-stack & AI:
 
-### 📞 Escape — Fake Incoming Call App &nbsp;![Android](https://img.shields.io/badge/Published_on-Google_Play-3DDC84?logo=google-play&logoColor=white)
-🔗 https://github.com/bowl1/Escape_mobile_app  
-📲 **Google Play:** https://play.google.com/store/apps/details?id=com.libowen.fakecall
-
-A **published Android app** that generates convincing fake incoming calls to help users gracefully exit awkward situations. Tap once and your phone rings with a realistic ringtone, vibration, caller name — the works.
-
-- One-tap call generation with random callers using relationship labels (Mom, Boss, etc.)
-- Custom caller support — personalize name, number, and photo
-- Scheduling — delay calls from seconds up to 8 hours, works even when the phone is asleep
-- Lock-screen integration — calls appear as genuine incoming calls on the lock screen
-- Contact management — save favorite fake callers with default selection
-
-**Tech:** Kotlin, Jetpack Compose, Material Design 3, Hilt, Room, DataStore, AlarmManager, Foreground Service, Clean Architecture
-
----
-
-### 👻 My Little Ghost — Anonymous Social Platform  
+#### 👻 My Little Ghost — Anonymous Social Platform  
 🔗 https://github.com/bowl1/social-chat-app  
 🌐 https://social-chat-dk.vercel.app  
 Figma: https://github.com/bowl1/Figma-Portfolio  (user case interview, UI design and mini component library)
@@ -42,7 +26,24 @@ Figma: https://github.com/bowl1/Figma-Portfolio  (user case interview, UI design
 
 ---
 
-### 🤖 Ask My Docs — PDF-based RAG Chatbot  
+#### ✍️ HeyWrite — Intent-Driven AI Writing Assistant
+
+🔗 https://github.com/bowl1/Hey_write  
+🌐 https://hey-write.vercel.app
+
+A full-stack AI application that turns a one-sentence user intent into structured professional documents (emails, reports, meeting summaries).
+
+**Features**
+- Designed a **semantic template routing system** using embeddings + vector search to select the correct document structure before generation
+- Implemented **context-aware editing** — updates only relevant sections instead of regenerating the whole document
+- Built fallback **wild mode generation** when no template matches
+- Similarity-based retrieval filtering (semantic gating)
+- Handles chat history and incremental document refinement
+- Deployment with Docker, GitHub Actions, Vercel, Render
+
+**Tech:** React, TypeScript, Python, FastAPI, LangChain, OpenAI API Embeddings, OpenAI-compatible LLM APIs (DeepSeek), RAG, ChromaDB, Docker, GitHub Actions, Vercel, Render
+
+#### Ask My Docs — PDF-based RAG Chatbot  
 🔗 https://github.com/bowl1/AskMyDocs-AI-app  
 🌐 https://askmydocument.vercel.app  
 
@@ -53,43 +54,11 @@ Figma: https://github.com/bowl1/Figma-Portfolio  (user case interview, UI design
 **Tech:** Python, LangChain, TypeScript, FastAPI, React, RAG, ChromaDB, Tailwind CSS, Docker, GitHub Actions, LLMs, Vercel, AWS, HuggingFace，OpenAI-compatible LLM APIs (DeepSeek)
 
 ---
-
-### ✍️ HeyWrite — Intent-Driven AI Writing Assistant
-
-🔗 https://github.com/bowl1/Hey_write  
-🌐 https://hey-write.vercel.app
-
-A full-stack AI application that turns a one-sentence user intent into structured professional documents (emails, reports, meeting summaries).
-
-### Features
-- Designed a **semantic template routing system** using embeddings + vector search to select the correct document structure before generation
-- Implemented **context-aware editing** — updates only relevant sections instead of regenerating the whole document
-- Built fallback **wild mode generation** when no template matches
-- Similarity-based retrieval filtering (semantic gating)
-- Handles chat history and incremental document refinement
-- Deployment with Docker, GitHub Actions, Vercel, Render
-
-**Tech:** React, TypeScript, Python, FastAPI, LangChain, OpenAI API Embeddings, OpenAI-compatible LLM APIs (DeepSeek), RAG, ChromaDB, Docker, GitHub Actions, Vercel, Render
-
 ---
 
-### 🥗 FridgeToFood — Recipe Discovery Mobile App  
-🔗 https://github.com/bowl1/Food-Mobile-App
+### ML & Data Engineering:
 
-
-A cross-platform recipe app that turns fridge ingredients into practical meal ideas to reduce food waste.  Built with **React Native (Expo + TypeScript)** and a **Node.js/Express** backend with **Firebase Auth + Firestore**.
-
-- Firebase Auth login/register
-- Recipe search via backend proxy to third-party API + dietary tag filtering (with strict vegetarian post-filter)
-- Favorites with offline-first **SQLite** cache + background sync
-- Profile with avatar upload (camera / photo library)
-- Recipe detail long-image sharing + local notifications on favorite save
-
-**Tech:** Expo (React Native), TypeScript, React Navigation, Zustand, TanStack Query, expo-sqlite, expo-notifications, Express, Firebase Admin, Firestore
-
----
-
-### 🌀 Behaviour-Aware Federated Wind Power Forecasting  
+#### Behaviour-Aware Federated Wind Power Forecasting  
 **Master’s Thesis Project**  
 🔗 Strategy design and model training (Python, FL, LSTM): https://github.com/bowl1/Wind-and-AI
 
@@ -110,7 +79,18 @@ A cross-platform recipe app that turns fridge ingredients into practical meal id
 
 ---
 
-### Crypto Data Pipeline — Production-Style Lakehouse
+#### Wind Power Forecasting System
+🔗 https://github.com/bowl1/short-time-wind-energy-forecasting-system  
+📡 API Docs: http://13.60.68.102/docs  
+
+- Developed a **machine learning–powered forecasting service** using real-world weather and energy data.
+- Built a RESTful API, tracked experiments with MLflow, and deployed the system on a cloud VM using Docker and CI/CD.
+
+**Tech:** Python, FastAPI, scikit-learn, MLflow, Docker, AWS, MLflow，XGboost, Ramdom Forest
+
+---
+
+#### Crypto Data Pipeline — Production-Style Lakehouse
 🔗 https://github.com/bowl1/crypto-data-pipeline
 
 A data engineering pipeline that ingests real-time cryptocurrency market data and transforms it into analysis-ready datasets using a modern lakehouse architecture.
@@ -125,24 +105,51 @@ A data engineering pipeline that ingests real-time cryptocurrency market data an
 **Tech**: Python, Apache Airflow, dbt, Databricks, Delta Lake, AWS S3, Parquet, SQL, Docker
 
 ---
-
-### 🌬️ Wind Power Forecasting System
-🔗 https://github.com/bowl1/short-time-wind-energy-forecasting-system  
-📡 API Docs: http://13.60.68.102/docs  
-
-- Developed a **machine learning–powered forecasting service** using real-world weather and energy data.
-- Built a RESTful API, tracked experiments with MLflow, and deployed the system on a cloud VM using Docker and CI/CD.
-
-**Tech:** Python, FastAPI, scikit-learn, MLflow, Docker, AWS, MLflow，XGboost, Ramdom Forest
-
 ---
 
-### 🔎 Search Engine with Different Index Structures  
+### Java:
+
+#### Search Engine with Different Index Structures  
 🔗 https://github.com/bowl1/Search-Engine-with-different-index  
 
 - Implemented a **mini search engine** using forward and inverted indexing.
 - Indexed **25,000+ Wikipedia articles** and benchmarked query performance.
 
 **Tech:** Java, SQLite, Indexing, JUnit testing, JMH benchmark, forward index, inverted index
+
+---
+---
+
+### Mobile App:
+
+#### 📞 Escape — Fake Incoming Call App &nbsp;![Android](https://img.shields.io/badge/Published_on-Google_Play-3DDC84?logo=google-play&logoColor=white)
+🔗 https://github.com/bowl1/Escape_mobile_app  
+📲 **Google Play:** https://play.google.com/store/apps/details?id=com.libowen.fakecall
+
+A **published Android app** that generates convincing fake incoming calls to help users gracefully exit awkward situations. Tap once and your phone rings with a realistic ringtone, vibration, caller name — the works.
+
+- One-tap call generation with random callers using relationship labels (Mom, Boss, etc.)
+- Custom caller support — personalize name, number, and photo
+- Scheduling — delay calls from seconds up to 8 hours, works even when the phone is asleep
+- Lock-screen integration — calls appear as genuine incoming calls on the lock screen
+- Contact management — save favorite fake callers with default selection
+
+**Tech:** Kotlin, Jetpack Compose, Material Design 3, Hilt, Room, DataStore, AlarmManager, Foreground Service, Clean Architecture
+
+---
+
+#### 🥗 FridgeToFood — Recipe Discovery Mobile App  
+🔗 https://github.com/bowl1/Food-Mobile-App
+
+
+A cross-platform recipe app that turns fridge ingredients into practical meal ideas to reduce food waste.  Built with **React Native (Expo + TypeScript)** and a **Node.js/Express** backend with **Firebase Auth + Firestore**.
+
+- Firebase Auth login/register
+- Recipe search via backend proxy to third-party API + dietary tag filtering (with strict vegetarian post-filter)
+- Favorites with offline-first **SQLite** cache + background sync
+- Profile with avatar upload (camera / photo library)
+- Recipe detail long-image sharing + local notifications on favorite save
+
+**Tech:** Expo (React Native), TypeScript, React Navigation, Zustand, TanStack Query, expo-sqlite, expo-notifications, Express, Firebase Admin, Firestore
 
 ---
