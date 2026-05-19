@@ -7,7 +7,6 @@
 📫 **Contact**  
 Email: bowenivy0@gmail.com
 
----
 
 ## 🧩 Projects
 
@@ -42,6 +41,8 @@ A full-stack AI application that turns a one-sentence user intent into structure
 - Deployment with Docker, GitHub Actions, Vercel, Render
 
 **Tech:** React, TypeScript, Python, FastAPI, LangChain, OpenAI API Embeddings, OpenAI-compatible LLM APIs (DeepSeek), RAG, ChromaDB, Docker, GitHub Actions, Vercel, Render
+
+---
 
 #### Ask My Docs — PDF-based RAG Chatbot  
 🔗 https://github.com/bowl1/AskMyDocs-AI-app  
