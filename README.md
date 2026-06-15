@@ -25,22 +25,25 @@ Figma: https://github.com/bowl1/Figma-Portfolio  (user case interview, UI design
 
 ---
 
-#### ✍️ HeyWrite — Intent-Driven AI Writing Assistant
+#### ✍️ HeyWrite — AI Smart Writing Assistant
 
 🔗 https://github.com/bowl1/Hey_write  
 🌐 https://hey-write.vercel.app
 
-A full-stack AI application that turns a one-sentence user intent into structured professional documents (emails, reports, meeting summaries).
+An AI-powered smart writing assistant that turns a one-sentence intent into professional content, with control over tone, language, and generation mode.
 
 **Features**
-- Designed a **semantic template routing system** using embeddings + vector search to select the correct document structure before generation
-- Implemented **context-aware editing** — updates only relevant sections instead of regenerating the whole document
-- Built fallback **wild mode generation** when no template matches
-- Similarity-based retrieval filtering (semantic gating)
-- Handles chat history and incremental document refinement
-- Deployment with Docker, GitHub Actions, Vercel, Render
+- Built two generation modes: **template-based generation** and **wild/freeform generation**
+- Implemented **hybrid template retrieval** with pgvector semantic search, BM25 keyword search, weighted reranking, and match-score gating
+- Built a **LangGraph-controlled agent loop** for planning, tool use, drafting, revision, evaluation, retry, and state persistence
+- Supports multi-turn conversation memory, session recovery, previous-result revisiting, and incremental draft modification
+- Added revision summaries that highlight changes between the previous and newly generated content
+- Supports tone/style control including Formal, Casual, Polite Push, Concise & Direct, Humorous, and Creative
+- Supports English, Chinese, and Danish, with one-click copy for generated content
+- Added evaluator guardrails combining deterministic checks and optional LLM-as-judge feedback before persisting final output
+- Deployment with Docker, GitHub Actions, Vercel, and Render
 
-**Tech:** React, TypeScript, Python, FastAPI, LangChain, OpenAI API Embeddings, OpenAI-compatible LLM APIs (DeepSeek), RAG, ChromaDB, Docker, GitHub Actions, Vercel, Render
+**Tech:** React, TypeScript, Python, FastAPI, LangGraph, LangChain, DeepSeek Chat API, OpenAI Embeddings (text-embedding-3-small), RAG, PostgreSQL, pgvector, BM25, Docker, GitHub Actions, Vercel, Render
 
 ---
 
