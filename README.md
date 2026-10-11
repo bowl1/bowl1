@@ -41,9 +41,11 @@ An AI-powered smart writing assistant that turns a one-sentence intent into prof
 - Supports tone/style control including Formal, Casual, Polite Push, Concise & Direct, Humorous, and Creative
 - Supports English, Chinese, and Danish, with one-click copy for generated content
 - Added evaluator guardrails combining deterministic checks and optional LLM-as-judge feedback before persisting final output
+- Integrated **Langfuse observability** to trace agent execution, model calls, evaluation results, and retries, with session/run correlation and token usage and latency tracking when reported by the model provider
+- Integrated **Supabase Auth and hosted PostgreSQL** for email/password sign-up and sign-in, backend token validation, and per-user workspaces that isolate private templates, conversation history, and saved drafts, with pgvector for template embeddings
 - Deployment with Docker, GitHub Actions, Vercel, and Render
 
-**Tech:** React, TypeScript, Python, FastAPI, LangGraph, LangChain, DeepSeek Chat API, OpenAI Embeddings (text-embedding-3-small), RAG, PostgreSQL, pgvector, BM25, Docker, GitHub Actions, Vercel, Render
+**Tech:** React, TypeScript, Python, FastAPI, LangGraph, LangChain, Langfuse, Supabase (Auth, PostgreSQL), DeepSeek Chat API, OpenAI Embeddings (text-embedding-3-small), RAG, pgvector, BM25, Docker, GitHub Actions, Vercel, Render
 
 ---
 
