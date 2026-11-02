@@ -10,42 +10,49 @@ Email: bowenivy0@gmail.com
 
 ## 🧩 Projects
 
+---
 ### Full-stack & AI:
 
-#### 👻 My Little Ghost — Anonymous Social Platform  
-🔗 https://github.com/bowl1/social-chat-app  
-🌐 https://social-chat-dk.vercel.app  
-Figma: https://github.com/bowl1/Figma-Portfolio  (user case interview, UI design and mini component library)
+#### ✍️ HeyWrite — AI-Powered Template Selection & Content Generation
 
-- React **anonymous social sharing platform** , developing from user interview -> product requirement-> logo design -> UI design-> usability testing -> code implementing. 
-- Supports text and media posts with **per-group aliases**, preserving user privacy.
-- Implemented authentication, media uploads, and scalable feed interactions.
+🔗 [GitHub](https://github.com/bowl1/Hey_write)  
+🌐 [Live Demo](https://hey-write.vercel.app)
 
-**Tech:** React, Tanstack Query, Zustand, TypeScript, Next.js, PostgreSQL, Prisma, Firebase Auth, Vercel, Figma, HTML,CSS, Styled component
+An AI-powered content generation system that understands user intent, retrieves and selects the most relevant writing templates, and generates context-aware content based on their structure and style. Combines **hybrid retrieval (semantic search + BM25)** with **LangGraph agent workflows** to automate template selection, drafting, evaluation, and iterative refinement.
+
+**Features**
+- **Intelligent template selection:** Matches user intent to suitable writing templates through pgvector semantic search, BM25 keyword retrieval, weighted reranking, and relevance-score gating
+- **RAG-based content generation:** Uses retrieved templates as structural and stylistic guidance to produce context-aware drafts instead of relying solely on generic LLM prompts
+- **Agentic workflow orchestration:** Built a LangGraph-controlled loop for planning, tool execution, template retrieval, drafting, evaluation, revision, and bounded retries
+- **Dual generation strategies:** Supports template-guided generation and freeform generation when users prefer creative flexibility
+- **Iterative refinement:** Enables multi-turn editing, session recovery, conversation memory, previous-result retrieval, and revision summaries
+- **Quality evaluation:** Combines deterministic validation with optional LLM-as-a-Judge evaluation before saving final outputs
+- **LLM observability:** Integrated Langfuse to trace agent execution, tool calls, evaluation results, retries, and available token usage and latency metrics
+- **Secure user workspaces:** Supabase Auth, PostgreSQL, and backend token validation for private templates, conversations, and saved drafts
+- **Multilingual support:** English, Chinese, and Danish, with configurable tone and writing style
+- **Deployment & CI/CD:** Docker, GitHub Actions, Vercel, and Render
+
+**Tech:** React, TypeScript, Python, FastAPI, LangGraph, LangChain, Langfuse, RAG, pgvector, BM25, Supabase (Auth, PostgreSQL), DeepSeek API, OpenAI Embeddings, Docker, GitHub Actions, Vercel, Render
 
 ---
 
-#### ✍️ HeyWrite — AI Smart Writing Assistant
+#### 🥗 FridgeOut — AI-Powered Recipe Mobile App
 
-🔗 https://github.com/bowl1/Hey_write  
-🌐 https://hey-write.vercel.app
+🔗 [GitHub](https://github.com/bowl1/Food-Mobile-App) | [iOS TestFlight](https://testflight.apple.com/join/QqwUY2qK)
 
-An AI-powered smart writing assistant that turns a one-sentence intent into professional content, with control over tone, language, and generation mode.
+An AI-powered iOS app that transforms fridge photos into personalized recipes to reduce food waste. Built with **React Native (Expo + TypeScript)** and a **Python/FastAPI** backend, integrating **OpenAI multimodal models, LangGraph, MCP, and Supabase**.
 
-**Features**
-- Built two generation modes: **template-based generation** and **wild/freeform generation**
-- Implemented **hybrid template retrieval** with pgvector semantic search, BM25 keyword search, weighted reranking, and match-score gating
-- Built a **LangGraph-controlled agent loop** for planning, tool use, drafting, revision, evaluation, retry, and state persistence
-- Supports multi-turn conversation memory, session recovery, previous-result revisiting, and incremental draft modification
-- Added revision summaries that highlight changes between the previous and newly generated content
-- Supports tone/style control including Formal, Casual, Polite Push, Concise & Direct, Humorous, and Creative
-- Supports English, Chinese, and Danish, with one-click copy for generated content
-- Added evaluator guardrails combining deterministic checks and optional LLM-as-judge feedback before persisting final output
-- Integrated **Langfuse observability** to trace agent execution, model calls, evaluation results, and retries, with session/run correlation and token usage and latency tracking when reported by the model provider
-- Integrated **Supabase Auth and hosted PostgreSQL** for email/password sign-up and sign-in, backend token validation, and per-user workspaces that isolate private templates, conversation history, and saved drafts, with pgvector for template embeddings
-- Deployment with Docker, GitHub Actions, Vercel, and Render
+- **AI ingredient recognition** from fridge photos, with user review and editable inventory
+- **Agentic recipe generation** using LangGraph, structured outputs, deterministic guardrails, LLM-as-a-Judge evaluation, and bounded retries
+- **MCP-based tool integration** for authenticated access to user inventory and dietary preferences
+- **Supabase Auth + PostgreSQL** with Row Level Security (RLS) for secure, user-specific data
+- **Offline-aware favorites and inventory**, with local caching and synchronization
+- **AI-generated recipe images** and subscription management via RevenueCat and Apple in-app purchases
+- **Testing & AI evaluation:** pytest, Node.js and SQL tests, TypeScript checks, custom offline evaluation pipelines for ingredient recognition and recipe quality, and regression testing
+- **LLM observability:** Langfuse tracing for generation rounds, guardrail rejections, evaluation scores, and recipe selection outcomes during development
+- **CI/CD & deployment:** Automated checks with GitHub Actions, FastAPI deployment on Render, and iOS distribution via Expo EAS and TestFlight
 
-**Tech:** React, TypeScript, Python, FastAPI, LangGraph, LangChain, Langfuse, Supabase (Auth, PostgreSQL), DeepSeek Chat API, OpenAI Embeddings (text-embedding-3-small), RAG, pgvector, BM25, Docker, GitHub Actions, Vercel, Render
+**Tech:** React Native, Expo, TypeScript, Python, FastAPI, OpenAI API, LangGraph, MCP, Supabase, PostgreSQL, RevenueCat, Langfuse, pytest, GitHub Actions, Render, Expo EAS
 
 ---
 
@@ -60,6 +67,18 @@ An AI-powered smart writing assistant that turns a one-sentence intent into prof
 **Tech:** Python, LangChain, TypeScript, FastAPI, React, RAG, ChromaDB, Tailwind CSS, Docker, GitHub Actions, LLMs, Vercel, AWS, HuggingFace，OpenAI-compatible LLM APIs (DeepSeek)
 
 ---
+
+#### 👻 My Little Ghost — Anonymous Social Platform  
+🔗 https://github.com/bowl1/social-chat-app  
+🌐 https://social-chat-dk.vercel.app  
+Figma: https://github.com/bowl1/Figma-Portfolio  (user case interview, UI design and mini component library)
+
+- React **anonymous social sharing platform** , developing from user interview -> product requirement-> logo design -> UI design-> usability testing -> code implementing. 
+- Supports text and media posts with **per-group aliases**, preserving user privacy.
+- Implemented authentication, media uploads, and scalable feed interactions.
+
+**Tech:** React, Tanstack Query, Zustand, TypeScript, Next.js, PostgreSQL, Prisma, Firebase Auth, Vercel, Figma, HTML,CSS, Styled component
+
 ---
 
 ### ML & Data Engineering:
@@ -111,7 +130,6 @@ A data engineering pipeline that ingests real-time cryptocurrency market data an
 **Tech**: Python, Apache Airflow, dbt, Databricks, Delta Lake, AWS S3, Parquet, SQL, Docker
 
 ---
----
 
 ### Java:
 
@@ -123,7 +141,6 @@ A data engineering pipeline that ingests real-time cryptocurrency market data an
 
 **Tech:** Java, SQLite, Indexing, JUnit testing, JMH benchmark, forward index, inverted index
 
----
 ---
 
 ### Mobile App:
@@ -144,18 +161,3 @@ A **published Android app** that generates convincing fake incoming calls to hel
 
 ---
 
-#### 🥗 FridgeToFood — Recipe Discovery Mobile App  
-🔗 https://github.com/bowl1/Food-Mobile-App
-
-
-A cross-platform recipe app that turns fridge ingredients into practical meal ideas to reduce food waste.  Built with **React Native (Expo + TypeScript)** and a **Node.js/Express** backend with **Firebase Auth + Firestore**.
-
-- Firebase Auth login/register
-- Recipe search via backend proxy to third-party API + dietary tag filtering (with strict vegetarian post-filter)
-- Favorites with offline-first **SQLite** cache + background sync
-- Profile with avatar upload (camera / photo library)
-- Recipe detail long-image sharing + local notifications on favorite save
-
-**Tech:** Expo (React Native), TypeScript, React Navigation, Zustand, TanStack Query, expo-sqlite, expo-notifications, Express, Firebase Admin, Firestore
-
----
