@@ -108,10 +108,16 @@ Figma: https://github.com/bowl1/Figma-Portfolio  (user case interview, UI design
 🔗 https://github.com/bowl1/short-time-wind-energy-forecasting-system  
 📡 API Docs: http://13.60.68.102/docs  
 
-- Developed a **machine learning–powered forecasting service** using real-world weather and energy data.
-- Built a RESTful API, tracked experiments with MLflow, and deployed the system on a cloud VM using Docker and CI/CD.
+An end-to-end wind power forecasting system for Scotland’s **Orkney Islands**, covering data preprocessing, model evaluation, experiment tracking, API serving, and cloud deployment. Serves a trained **Random Forest** model through FastAPI, with a separate local Kubernetes environment for scheduled forecasting and observability.
 
-**Tech:** Python, FastAPI, scikit-learn, MLflow, Docker, AWS, MLflow，XGboost, Ramdom Forest
+- **Data preparation & feature engineering:** Combined historical wind generation and weather data from InfluxDB, aligned hourly observations, handled missing values, and encoded wind direction and calendar features
+- **Model training & evaluation:** Compared Linear Regression, Random Forest, and XGBoost using time-series cross-validation and MAE, MSE, and R²; tracked experiment parameters, metrics, model artifacts, and registered models with MLflow
+- **Prediction API:** Built FastAPI endpoints for single-point and 24-hour predictions, with input validation, model availability checks, and interactive Swagger documentation
+- **Cloud deployment & Terraform:** Containerized the API with Docker on AWS EC2; managed the instance, security group, and IAM roles with Terraform, with formatting, validation, and mock-provider tests in CI
+- **Keyless CI/CD:** Automated application releases through GitHub Actions using AWS OIDC authentication and Systems Manager Run Command, without stored AWS access keys or SSH keys
+- **Local Kubernetes & monitoring:** Added a minikube environment with Kustomize, health probes, and an hourly CronJob that fetches Open-Meteo forecasts for 24-hour batch prediction; used Prometheus and Grafana to monitor forecast freshness, model status, request rates, errors, and latency ([implementation branch](https://github.com/bowl1/short-time-wind-energy-forecasting-system/tree/feat/local-k8s-monitoring))
+
+**Tech:** Python, FastAPI, Pydantic, pandas, NumPy, scikit-learn, Random Forest, XGBoost, MLflow, InfluxDB, Docker, AWS EC2, IAM, Systems Manager (SSM), Terraform, GitHub Actions, OIDC; **Local orchestration & monitoring:** Kubernetes (minikube), Prometheus, Grafana
 
 ---
 
