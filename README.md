@@ -30,9 +30,9 @@ An AI-powered content generation system that understands user intent, retrieves 
 - **LLM observability:** Integrated Langfuse to trace agent execution, tool calls, evaluation results, retries, and available token usage and latency metrics
 - **Secure user workspaces:** Supabase Auth, PostgreSQL, and backend token validation for private templates, conversations, and saved drafts
 - **Multilingual support:** English, Chinese, and Danish, with configurable tone and writing style
-- **Deployment & CI/CD:** Docker, GitHub Actions, Vercel, and Render
+- **Deployment & CI/CD:** Docker, GitHub Actions, Vercel, and AWS EC2
 
-**Tech:** React, TypeScript, Python, FastAPI, LangGraph, LangChain, Langfuse, RAG, pgvector, BM25, Supabase (Auth, PostgreSQL), DeepSeek API, OpenAI Embeddings, Docker, GitHub Actions, Vercel, Render
+**Tech:** React, TypeScript, Python, FastAPI, LangGraph, LangChain, Langfuse, RAG, pgvector, BM25, Supabase (Auth, PostgreSQL), DeepSeek API, OpenAI Embeddings, Docker, GitHub Actions, Vercel, AWS EC2
 
 ---
 
