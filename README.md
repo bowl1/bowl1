@@ -36,11 +36,12 @@ An AI-powered content generation system that understands user intent, retrieves 
 
 ---
 
-#### 🥗 FridgeOut — AI-Powered Recipe Mobile App
+#### 🥗 FridgeOut — AI-Powered Recipe Mobile App &nbsp;![iOS](https://img.shields.io/badge/Published_on-App_Store-007AFF?logo=app-store&logoColor=white)
 
-🔗 [GitHub](https://github.com/bowl1/Food-Mobile-App) | [iOS TestFlight](https://testflight.apple.com/join/QqwUY2qK)
+🔗 https://github.com/bowl1/Food-Mobile-App<br>
+📲 **App Store:** https://apps.apple.com/us/app/fridgeout-recipe-wizard/id6821422636
 
-An AI-powered iOS app that transforms fridge photos into personalized recipes to reduce food waste. Built with **React Native (Expo + TypeScript)** and a **Python/FastAPI** backend, integrating **OpenAI multimodal models, LangGraph, MCP, and Supabase**.
+A **published iOS app** that transforms fridge photos into personalized recipes to reduce food waste. Built with **React Native (Expo + TypeScript)** and a **Python/FastAPI** backend, integrating **OpenAI multimodal models, LangGraph, MCP, and Supabase**.
 
 - **AI ingredient recognition** from fridge photos, with user review and editable inventory
 - **Agentic recipe generation** using LangGraph, structured outputs, deterministic guardrails, LLM-as-a-Judge evaluation, and bounded retries
@@ -50,7 +51,7 @@ An AI-powered iOS app that transforms fridge photos into personalized recipes to
 - **AI-generated recipe images** and subscription management via RevenueCat and Apple in-app purchases
 - **Testing & AI evaluation:** pytest, Node.js and SQL tests, TypeScript checks, custom offline evaluation pipelines for ingredient recognition and recipe quality, and regression testing
 - **LLM observability:** Langfuse tracing for generation rounds, guardrail rejections, evaluation scores, and recipe selection outcomes during development
-- **CI/CD & deployment:** Automated checks with GitHub Actions, FastAPI deployment on Render, and iOS distribution via Expo EAS and TestFlight
+- **CI/CD & deployment:** Automated checks with GitHub Actions, FastAPI deployment on Render, and published on the Apple App Store
 
 **Tech:** React Native, Expo, TypeScript, Python, FastAPI, OpenAI API, LangGraph, MCP, Supabase, PostgreSQL, RevenueCat, Langfuse, pytest, GitHub Actions, Render, Expo EAS
 
